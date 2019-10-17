@@ -5,6 +5,7 @@ function takeANumber (line,person) {
 
 function nowServing (line) {
   let i=0
+  console.log(line,'hello')
   while (i<line.length) {
     i++
   }
@@ -15,15 +16,17 @@ function nowServing (line) {
     return(`Currently serving ${line.shift()}.`)
 }
 
-function currentLine (line) {
-  let j=0
-  while (j<line.length) {
-    line.push(` `+[j+1]+`. `+line[j])
-    j++
-  }
-  if (line.length === 0) {
-    return "The line is currently empty."
-  }
-  else
-    return (`The line is currently:`+line)
-}
+// function currentLine (line) {
+//   let j=0
+  
+//   while (j<line.length) {
+//     final.push(` `+[j+1]+`. `+line[j])
+//     j++
+//   }
+//   if (line.length === 0) {
+//     return "The line is currently empty."
+//   }
+//   else
+//     return (`The line is currently:`+line)
+// }
+
